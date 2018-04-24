@@ -61,6 +61,7 @@ classifier.add(Flatten())
 
 # Full Connection  
 classifier.add(Dense(units=128, activation='relu'))
+classifier.add(Dropout(rate=0.2))
 classifier.add(Dense(units=1, activation='sigmoid'))
 
 # Compiling CNN
