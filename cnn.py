@@ -71,9 +71,6 @@ with tf.device('/cpu:0'):
    classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']) 
 
 
-
-   # Part 2 : Fitting CNN to images 
-
    # Image Augmentaion used for enriching dataset to avoid overfitting ...
    # For higher accuracy, target size & number of layers can be increased ...
 
@@ -95,16 +92,17 @@ with tf.device('/cpu:0'):
                                                batch_size=32,
                                                class_mode='binary')
    
-with tf.device('/gpu:0'):
+# Part 2 : Fitting CNN to images 
 
+with tf.device('/gpu:0'):
+   
    classifier.fit_generator(training_set,
                            steps_per_epoch=8000,
                            epochs=100,
                            validation_data=test_set,
                            validation_steps=2000)
 
-   # K Cross-fold validation is not required in this case as evaluation has been done on validation set
-
+   # K Cross-fold validation is not required in this case as evaluation has been done on validation set using Image Augmentation.
 
 
    # Part 3 - Making new Prediction 
