@@ -113,10 +113,10 @@ with tf.device('/gpu:0'):
    test_image = image.img_to_array(test_image)  # To have input image with 3 dimensions ... 
    test_image = np.expand_dims(test_image, axis= 0)
    result = classifier.predict(test_image)
-train_datagen.class_indices 
-if result[0][0]==1 : 
-    prediction = "Dog"
-else :
-    prediction = "Cat"
+   train_datagen.class_indices 
+   if result[0][0]==1 : 
+       prediction = "Dog"
+   else :
+       prediction = "Cat"
  
     
