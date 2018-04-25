@@ -2,7 +2,6 @@
 
 Image dataset of dogs and cats from kaggle is used for CNN. It is the benchmark dataset to evaluate the performance of CNN for classifying images into dog and cat. 
 
-======
 
 # Architechture of CNN 
 
@@ -20,13 +19,11 @@ a. Flattening </br>
 -- Block IV : </br>
 a. Fully connected layer with dropout to avoid overfitting </br>
 
-=====
 
 # Image Augmentation 
 
 Used image augmentation. Image augmentation is widely used technique to enrich the dataset if dataset is not large enough for learning process. It performs random transformations per batch. Some of transformations are like flipping vertically, horizontally, rotation, zoom etc. Main idea of image augmentation is to include small perturbations in images and keeps central object intact so that it can deal with real world changes and can genearalize better for unseen data. 
 
-=====
 
 # Tuning 
 
@@ -40,7 +37,6 @@ Use CNN's initial architecture and it's learnt weigths from previous work such a
 
 Once pretrained weights are obtained from (step a), fine tuning the whole CNN model. 
 
-=====
 
 ### Note : GlobalMaxPooling or GlobalAvgPooling is used over flattening to reduce the number of parameters that are fed into fully connected layer so that overfitting can be avoided.  
 
