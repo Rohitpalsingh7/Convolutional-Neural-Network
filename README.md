@@ -4,19 +4,19 @@ Image dataset of dogs and cats from kaggle is used for CNN. It is the benchmark 
 
 # Architechture of CNN 
 
--- Block I :
+-- Block I : </br>
 a. Convolutional Layer : 32 Feature maps of size (3,3) generating 32 Activation maps. </br>
-b. MaxPooling/Downsamplng Layer : Pool size (3,3) with strides = 2
+b. MaxPooling/Downsamplng Layer : Pool size (3,3) with strides = 2 </br>
 
--- Block II :
+-- Block II : </br>
 a. Convolutional Layer : 32 Feature maps generating 32 Activation maps. </br>
-b. MaxPooling/Downsampling Layer : Pool size (3,3) with strides = 2
+b. MaxPooling/Downsampling Layer : Pool size (3,3) with strides = 2 </br>
 
--- Block III :
-a. Flattening 
+-- Block III :</br>
+a. Flattening </br>
 
--- Block IV : 
-a. Fully connected layer with dropout to avoid overfitting 
+-- Block IV : </br>
+a. Fully connected layer with dropout to avoid overfitting </br>
 
 
 # Image Augmentation 
