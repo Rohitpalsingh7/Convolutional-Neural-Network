@@ -1,4 +1,4 @@
-# Convolutional-Neural-Network Testing
+# Convolutional-Neural-Network Testing Only
 
 Image dataset of dogs and cats from kaggle is used for CNN. It is the benchmark dataset to evaluate the performance of CNN for classifying images into dog and cat. 
 
